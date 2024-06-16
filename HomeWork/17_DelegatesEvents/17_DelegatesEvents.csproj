@@ -3,32 +3,32 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>_17_DelegatesEvents</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="9_SOLID\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="17_DelegatesEvents\SampleFiles\file1.txt">
+      <None Update="SampleFiles\file1.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="17_DelegatesEvents\SampleFiles\file2.txt">
+      <None Update="SampleFiles\file2.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="17_DelegatesEvents\SampleFiles\file3.txt">
+      <None Update="SampleFiles\file3.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="17_DelegatesEvents\SampleFiles\stop.exe">
+      <None Update="SampleFiles\stop.exe">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="17_DelegatesEvents\SampleFiles\stop.txt">
+      <None Update="SampleFiles\stop.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="17_DelegatesEvents\SampleFiles\xxx.txt">
+      <None Update="SampleFiles\xxx.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="SampleFiles\**\*">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
