@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="28_ProcessHandling\" />
       <Folder Include="9_SOLID\" />
     </ItemGroup>
 
