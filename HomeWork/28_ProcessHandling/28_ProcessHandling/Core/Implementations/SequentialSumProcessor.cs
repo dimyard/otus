@@ -4,7 +4,7 @@ namespace _28_ProcessHandling.Core.Implementations;
 
 public class SequentialSumProcessor : ISumProcessing
 {
-    public long ProcessSum(int[] numbers)
+    public long ProcessSum(long[] numbers)
     {
         long sum = 0;
         foreach (var number in numbers)

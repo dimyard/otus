@@ -8,7 +8,7 @@ namespace _28_ProcessHandling.External
     {
         static void Main(string[] args)
         {
-            int[] sizes = [100_000, 1_000_000, 10_000_000]; // sugaaaar ^_^
+            long[] sizes = [100_000, 1_000_000, 10_000_000]; // sugaaaar ^_^
             var random = new Random();
             Console.OutputEncoding = Encoding.UTF8; // ⭐
             
@@ -18,12 +18,15 @@ namespace _28_ProcessHandling.External
                 new SequentialSumProcessor(), 
                 new ParallelSumProcessor(), 
                 new LinqSumProcessor(),
-                new AggregateLinqSumProcessor()
+                new SumLinqSumProcessor()
             };
-
+            
+            Console.WriteLine("🚀 Start Processing 🚀");
+            Console.WriteLine($"⚡ CPU cores count: {Environment.ProcessorCount}");
+            
             foreach (var size in sizes)
             {
-                int[] numbers = new int[size];
+                long[] numbers = new long[size];
                 for (int i = 0; i < size; i++)
                 {
                     numbers[i] = random.Next(1, 100);

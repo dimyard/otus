@@ -14,7 +14,7 @@ public class StopwatchTimeMeasurer : ITimeMeasurer
         return stopwatch.ElapsedMilliseconds;
     }
     
-    public static void MeasureAndPrintTime(string methodTitle, ISumProcessing processor, int[] numbers, ITimeMeasurer timeMeasurer)
+    public static void MeasureAndPrintTime(string methodTitle, ISumProcessing processor, long[] numbers, ITimeMeasurer timeMeasurer)
     {
         long time = timeMeasurer.Measure(() => processor.ProcessSum(numbers));
         long sum = processor.ProcessSum(numbers);

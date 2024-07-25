@@ -5,9 +5,9 @@ namespace _28_ProcessHandling.Core.Implementations;
 
 public class ParallelSumProcessor : ISumProcessing
 {
-    public long ProcessSum(int[] numbers)
+    public long ProcessSum(long[] numbers)
     {
-        const int numThreads = 8;
+        int numThreads = Environment.ProcessorCount;
         var range = numbers.Length / numThreads;
         ConcurrentBag<long> results = new ConcurrentBag<long>();
         var threads = new List<Thread>();
