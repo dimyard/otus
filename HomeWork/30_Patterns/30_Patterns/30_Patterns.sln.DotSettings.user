@@ -1,0 +1,31 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e1502e9_002D51dd_002D44c4_002D830f_002Dd2dcca3ea1a9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;F8B6B84B-8D65-4052-9AF8-58E9047F1F30/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFolder&gt;BC0C6A6B-C106-421E-852D-8FDD9912E584/d:PatternsUnitTests/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=82e6e047_002D6939_002D42d3_002D975b_002D3c1f3818849e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;F8B6B84B-8D65-4052-9AF8-58E9047F1F30/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFolder&gt;BC0C6A6B-C106-421E-852D-8FDD9912E584/d:PatternsUnitTests/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=973cbfe6_002Deb61_002D483c_002Da9e2_002D463aa479eeea/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;F8B6B84B-8D65-4052-9AF8-58E9047F1F30/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFolder&gt;BC0C6A6B-C106-421E-852D-8FDD9912E584/d:PatternsUnitTests/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c9a6b733_002D8c96_002D4c5e_002Da28f_002D2ad37dd639c8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;F8B6B84B-8D65-4052-9AF8-58E9047F1F30/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFolder&gt;BC0C6A6B-C106-421E-852D-8FDD9912E584/d:PatternsUnitTests/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6fd3219_002D9ae7_002D4e0a_002D9252_002Dc576429dc4a3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFolder&gt;F8B6B84B-8D65-4052-9AF8-58E9047F1F30/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFolder&gt;BC0C6A6B-C106-421E-852D-8FDD9912E584/d:PatternsUnitTests/d:Tests/d:Core/d:Entities&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
