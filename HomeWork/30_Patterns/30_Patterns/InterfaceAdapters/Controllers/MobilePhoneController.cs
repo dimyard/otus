@@ -1,6 +1,7 @@
-using _30_Patterns.Infrastructure.Repositories;
+using Patterns.Core.Entities;
+using Patterns.Infrastructure.Repositories;
 
-namespace _30_Patterns.InterfaceAdapters.Controllers;
+namespace Patterns.InterfaceAdapters.Controllers;
 
 /// <summary>
 /// Controller for mobile phones.
@@ -20,8 +21,8 @@ public class MobilePhoneController
         if (phone != null)
         {
             var clonedPhone = phone.Clone();
-            _repository.AddPhone(clonedPhone);
-            Console.WriteLine($"Phone cloned: {clonedPhone.ModelName}");
+            _repository.AddPhone(clonedPhone!);
+            Console.WriteLine($"Phone cloned: {clonedPhone!.ModelName}");
         }
         else
         {

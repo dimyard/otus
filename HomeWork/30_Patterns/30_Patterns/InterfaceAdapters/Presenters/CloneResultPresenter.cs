@@ -1,6 +1,6 @@
-using _30_Patterns.Core.Entities;
+using Patterns.Core.Entities;
 
-namespace _30_Patterns.InterfaceAdapters.Presenters;
+namespace Patterns.InterfaceAdapters.Presenters;
 
 /// <summary>
 /// Presenter for the result of cloning a mobile phone.

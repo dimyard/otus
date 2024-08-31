@@ -1,7 +1,8 @@
-using _30_Patterns.Infrastructure.Repositories;
-using _30_Patterns.InterfaceAdapters.Presenters;
+using Patterns.Core.Entities;
+using Patterns.Infrastructure.Repositories;
+using Patterns.InterfaceAdapters.Presenters;
 
-namespace _30_Patterns.UseCases;
+namespace Patterns.UseCases;
 
 /// <summary>
 /// Use case for cloning a mobile phone.
@@ -23,8 +24,8 @@ public class CloneMobilePhoneUseCase
         if (phone != null)
         {
             var clonedPhone = phone.Clone();
-            _repository.AddPhone(clonedPhone);
-            _presenter.Present(phone, clonedPhone);
+            _repository.AddPhone(clonedPhone!);
+            _presenter.Present(phone, clonedPhone!);
         }
         else
         {

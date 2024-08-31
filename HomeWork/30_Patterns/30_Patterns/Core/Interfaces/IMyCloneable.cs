@@ -1,4 +1,4 @@
-namespace _30_Patterns.Core.Interfaces;
+namespace Patterns.Core.Interfaces;
 
 /// <summary>
 /// Interface for cloning objects.

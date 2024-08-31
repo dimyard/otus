@@ -1,11 +1,11 @@
-using _30_Patterns.Core.Interfaces;
+using Patterns.Core.Interfaces;
 
-namespace _30_Patterns.Core.Entities;
+namespace Patterns.Core.Entities;
 
 /// <summary>
 /// Represents a smartphone.
 /// </summary>
-public class Smartphone : MobilePhone, ICloneable
+public class Smartphone : MobilePhone, ICloneable, IMyCloneable<Smartphone>
 {
     public int CameraMegapixels { get; set; }
 
@@ -15,12 +15,18 @@ public class Smartphone : MobilePhone, ICloneable
         CameraMegapixels = cameraMegapixels;
     }
 
-    public override Smartphone Clone()
+    // Override Clone method to return Smartphone type
+    public new Smartphone Clone()
     {
-        return new Smartphone(ModelName, Manufacturer, OperatingSystem, CameraMegapixels);
+        return (Smartphone)MemberwiseClone();
     }
 
     object ICloneable.Clone()
+    {
+        return Clone();
+    }
+
+    Smartphone IMyCloneable<Smartphone>.Clone()
     {
         return Clone();
     }

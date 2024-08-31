@@ -1,15 +1,12 @@
-using _30_Patterns.Core.Entities;
+using Patterns.Core.Entities;
 
-namespace _30_Patterns.Tests.Core.Entities;
+namespace Patterns.Tests.Core.Entities;
 
 /// <summary>
 /// Unit tests for the <see cref="FeaturePhone"/> class.
 /// </summary>
 public class FeaturePhoneTests
 {
-    /// <summary>
-    /// Tests that the <see cref="FeaturePhone"/> constructor initializes properties correctly.
-    /// </summary>
     [Fact]
     public void FeaturePhone_ShouldInitializePropertiesCorrectly()
     {
@@ -23,9 +20,6 @@ public class FeaturePhoneTests
         Assert.Equal(72, featurePhone.BatteryLifeHours);
     }
 
-    /// <summary>
-    /// Tests that the <see cref="FeaturePhone.Clone"/> method returns an exact copy of the original object.
-    /// </summary>
     [Fact]
     public void FeaturePhone_Clone_ShouldReturnExactCopy()
     {
@@ -42,5 +36,21 @@ public class FeaturePhoneTests
         Assert.Equal(originalFeaturePhone.Manufacturer, clonedFeaturePhone.Manufacturer);
         Assert.Equal(originalFeaturePhone.OperatingSystem, clonedFeaturePhone.OperatingSystem);
         Assert.Equal(originalFeaturePhone.BatteryLifeHours, clonedFeaturePhone.BatteryLifeHours);
+    }
+
+    [Fact]
+    public void FeaturePhone_Clone_ShouldNotAffectOriginal()
+    {
+        // Arrange
+        var originalFeaturePhone = new FeaturePhone("Nokia 3310", "Nokia", "Series 20", 72);
+        var clonedFeaturePhone = originalFeaturePhone.Clone();
+
+        // Act
+        clonedFeaturePhone.BatteryLifeHours = 80;
+
+        // Assert
+        Assert.NotEqual(originalFeaturePhone.BatteryLifeHours, clonedFeaturePhone.BatteryLifeHours);
+        Assert.Equal(72, originalFeaturePhone.BatteryLifeHours);
+        Assert.Equal(80, clonedFeaturePhone.BatteryLifeHours);
     }
 }

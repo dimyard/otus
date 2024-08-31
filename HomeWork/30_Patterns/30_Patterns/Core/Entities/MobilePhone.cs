@@ -1,11 +1,11 @@
-using _30_Patterns.Core.Interfaces;
+using Patterns.Core.Interfaces;
 
-namespace _30_Patterns.Core.Entities;
+namespace Patterns.Core.Entities;
 
 /// <summary>
 /// Represents a mobile phone.
 /// </summary>
-public abstract class MobilePhone : Device, IMyCloneable<MobilePhone>
+public abstract class MobilePhone : Device, ICloneable, IMyCloneable<MobilePhone>
 {
     public string OperatingSystem { get; set; }
     
@@ -17,5 +17,19 @@ public abstract class MobilePhone : Device, IMyCloneable<MobilePhone>
         OperatingSystem = operatingSystem;
     }
 
-    public abstract MobilePhone Clone();
+// Override Clone method to return MobilePhone type
+    public new virtual MobilePhone Clone()
+    {
+        return (MobilePhone)MemberwiseClone();
+    }
+
+    object ICloneable.Clone()
+    {
+        return Clone();
+    }
+
+    MobilePhone IMyCloneable<MobilePhone>.Clone()
+    {
+        return Clone();
+    }
 }

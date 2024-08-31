@@ -1,11 +1,11 @@
-using _30_Patterns.Core.Interfaces;
+using Patterns.Core.Interfaces;
 
-namespace _30_Patterns.Core.Entities;
+namespace Patterns.Core.Entities;
 
 /// <summary>
 /// Represents a feature phone.
 /// </summary>
-public class FeaturePhone : MobilePhone, ICloneable
+public class FeaturePhone : MobilePhone, ICloneable, IMyCloneable<FeaturePhone>
 {
     public int BatteryLifeHours { get; set; }
 
@@ -21,6 +21,11 @@ public class FeaturePhone : MobilePhone, ICloneable
     }
 
     object ICloneable.Clone()
+    {
+        return Clone();
+    }
+
+    FeaturePhone IMyCloneable<FeaturePhone>.Clone()
     {
         return Clone();
     }

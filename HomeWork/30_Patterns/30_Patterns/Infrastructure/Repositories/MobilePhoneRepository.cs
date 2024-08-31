@@ -1,6 +1,6 @@
-using _30_Patterns.Core.Entities;
+using Patterns.Core.Entities;
 
-namespace _30_Patterns.Infrastructure.Repositories;
+namespace Patterns.Infrastructure.Repositories;
 
 /// <summary>
 /// Repository for mobile phones.
